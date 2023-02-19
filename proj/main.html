@@ -1,42 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>testing</title>
-    <link rel="stylesheet" type = "text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
+
 <body>
     <div class="fcontainer">
         <div class="container">
             <div class="image">
-                <img class="img1" src="color_logo-removebg-preview.png">
-                <img  class="img2" src="unesco-logo-removebg-preview.png">
+                <img class="img1" src="color_logo-removebg-preview.png" />
+                <img class="img2" src="unesco-logo-removebg-preview.png" />
             </div>
             <div class="main">
-                <h1>STUDENT REGISTARTION FORM</h1>
+                <h1>STUDENT REGISTRATION FORM</h1>
                 <form>
                     <div class="pdetails details">
-                        <div class="collp1">
-                            <p ><style>
-                                @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-                                </style>Basic Information</p>
+                        <div class="collp1" data-toggle="collapse" data-target="#demo">
+                            <p>
+                                Basic Information
+                            </p>
+                            <div class="icon"><i class="fa fa-angle-down"></i></div>
+                        </div>
+                        <div class="box_x collapse" id="demo">
+                            <div class="F_name">
+                                <p>Full Name</p>
+                                <div class="full_name">
+                                    <div class="sub">
+                                        <input type="text" />
+                                        <label>First Name</label>
+                                    </div>
+                                    <div class="sub">
+                                        <input type="text" />
+                                        <label>Middle Name</label>
+                                    </div>
+                                    <div class="sub">
+                                        <input type="text" />
+                                        <label>Last Name</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sup 2nd line">
+                                <div class="sub">
+                                    <p>Student PRN number</p>
+                                    <input type="number" maxlength="10-" class="box" />
+                                    <label>e.g. 1118302123</label>
+                                </div>
+                                <div class="sub">
+                                    <p>Current Year</p>
+                                    <select class="box">
+                                        <option>1st</option>
+                                        <option>2st</option>
+                                        <option>3st</option>
+                                        <option>4st</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="sup 3rd line">
+                                <div class="sub">
+                                    <p>Mobile Number</p>
+                                    <input type="number" class="box" />
+                                    <label>e.g. 1118302123</label>
+                                </div>
+                                <div class="sub">
+                                    <p>Current Degree Program</p>
+                                    <select class="box">
+                                        <option>Btech</option>
+                                        <option>Mtech</option>
+                                        <option>MBA</option>
+                                        <option>BBA</option>
+                                        <option>BSc</option>
+                                        <option>MSc</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="sup 4th line">
+                                <div class="sub">
+                                    <p>Personal mail-id</p>
+                                    <input type="email" class="box" placeholder="example@gmail.com" />
+                                </div>
+                                <div class="sub">
+                                    <p>Official mail-id</p>
+                                    <input type="email" class="box" placeholder="prn@mitwpu.edu.in" />
+                                </div>
+                            </div>
+                            <div class="sup 5th line">
+                                <div class="sub">
+                                    <p>Birth Date</p>
+                                    <input type="date" class="box" />
+                                </div>
+                                <div class="sub">
+                                    <p>Student PRN number</p>
+                                    <input type="number" maxlength="10" class="box" />
+                                    <label>e.g. 1118302123</label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="edetails details">
-                        <div class="collp1">
-                            <p >Educational Information</p>
+                        <div class="collp1" data-toggle="collapse" data-target="#demo1">
+                            <p>Educational Information</p>
+                            <div class="icon"><i class="fa fa-angle-down"></i></div>
+                        </div>
+                        <div class="box_x collapse" id="demo1">
+                            <div class="sup 1 line">
+                                <div class="sub">
+                                    <p>10th Percentage</p>
+                                    <input type="number" max="100" class="box" />
+                                    <label>e.g. 45</label>
+                                </div>
+                                <div class="sub">
+                                    <p>12th Percentage/Diploma</p>
+                                    <input type="number" max="100" class="box" placeholder="XX" />
+                                    <label>e.g. 54</label>
+                                </div>
+                            </div>
+                            <div class="2nd line">
+                                <p>First Year</p>
+                                <div class="sup">
+                                    <div class="sub">
+                                        <p class="small">1st Sem GPA</p>
+                                        <input type="number" max="10" class="box" />
+                                        <label>e.g. 7.88</label>
+                                    </div>
+                                    <div class="sub">
+                                        <p class="small">2nd Sem GPA</p>
+                                        <input type="number" max="10" class="box" />
+                                        <label>e.g. 6.85</label>
+                                    </div>
+                                    <div class="sub">
+                                        <p class="small">Aggregrate</p>
+                                        <input type="number" max="10" class="box" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="3rd line">
+                                <p>Second Year</p>
+                                <div class="sup">
+                                    <div class="sub">
+                                        <p class="small">1st Sem GPA</p>
+                                        <input type="number" max="10" class="box" />
+                                        <label>e.g. 7.88</label>
+                                    </div>
+                                    <div class="sub">
+                                        <p class="small">2nd Sem GPA</p>
+                                        <input type="number" max="10" class="box" />
+                                        <label>e.g. 6.85</label>
+                                    </div>
+                                    <div class="sub">
+                                        <p class="small">Aggregrate</p>
+                                        <input type="number" max="10" class="box" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="4th line">
+                                <p>Third Year</p>
+                                <div class="sup">
+                                    <div class="sub">
+                                        <p class="small">1st Sem GPA</p>
+                                        <input type="number" max="10" class="box" />
+                                        <label>e.g. 7.88</label>
+                                    </div>
+                                    <div class="sub">
+                                        <p class="small">2nd Sem GPA</p>
+                                        <input type="number" max="10" class="box" />
+                                        <label>e.g. 6.85</label>
+                                    </div>
+                                    <div class="sub">
+                                        <p class="small">Aggregrate</p>
+                                        <input type="number" max="10" class="box" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="5th line">
+                                <p>Fouth Year</p>
+                                <div class="sup">
+                                    <div class="sub">
+                                        <p class="small">1st Sem GPA</p>
+                                        <input type="number" max="10" class="box" />
+                                        <label>e.g. 7.88</label>
+                                    </div>
+                                    <div class="sub">
+                                        <p class="small">2nd Sem GPA</p>
+                                        <input type="number" max="10" class="box" />
+                                        <label>e.g. 6.85</label>
+                                    </div>
+                                    <div class="sub">
+                                        <p class="small">Aggregrate</p>
+                                        <input type="number" max="10" class="box" />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="others details">
-                        <div class="collp1">
+                        <div class="collp1" data-toggle="collapse" data-target="#demo2">
                             <p>Other Information</p>
+                            <div class="icon"><i class="fa fa-angle-down"></i></div>
+                        </div>
+                        <div class="box_x collapse" id="demo2">
+                            <div class="1st line">
+                                <div class="sub">
+                                    <p>Intersted in?</p>
+                                    <div class="check">
+                                        <input type="checkbox">
+                                        <label>Placements</label><br />
+                                        <input type="checkbox">
+                                        <label>Higher Studies</label><br />
+                                    </div>
+                                    <br/>
+                                    <p>Competive Exams</p>
+                                    <div class="check">
+                                        <input type="checkbox">
+                                        <label>IES</label><br />
+                                        <input type="checkbox">
+                                        <label>GATE</label><br />
+                                        <input type="checkbox">
+                                        <label>IIT-JAM</label><br />
+                                        <input type="checkbox">
+                                        <label>SSC-CGL</label><br />
+                                        <input type="checkbox">
+                                        <label>CAT</label><br />
+                                        <input type="checkbox">
+                                        <label>GRE-MAT</label><br />
+                                        <input type="checkbox">
+                                        <label>TOFEL</label><br />
+                                        <input type="checkbox">
+                                        <label>Others</label><br />
+                                        <input type="text" placeholder="if others specify">
+                                    </div>
+                                    <br/>
+                                    <p>Area of Interests</p>
+                                    <div class="check">
+                                        <input type="checkbox">
+                                        <label>Data Science</label><br />
+                                        <input type="checkbox">
+                                        <label>App Developer</label><br />
+                                        <input type="checkbox">
+                                        <label>Game Developer</label><br />
+                                        <input type="checkbox">
+                                        <label>Data Scientist</label><br />
+                                        <input type="checkbox">
+                                        <label>Machine Learning</label><br />
+                                        <input type="checkbox">
+                                        <label>Front-End</label><br />
+                                        <input type="checkbox">
+                                        <label>Back-end</label><br />
+                                        <input type="checkbox">
+                                        <label>Others</label><br />
+                                        <input type="text" placeholder="if others specify">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <div class="button"><button type="button">SUBMIT</button></div>
                 </form>
             </div>
         </div>
     </div>
+    <script src="test.js"></script>
 </body>
+
 </html>

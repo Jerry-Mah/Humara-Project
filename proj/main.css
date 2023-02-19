@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
       
 
 }
@@ -17,11 +20,11 @@ body{
 }
 
 .container{
-    background-color: antiquewhite;
-    width: 700px;
+    background-color:#FAEBD7;
+    width: 55%;
     height: 800px;
     box-shadow: 1px 2px 10px 1px #474545;;
-    
+    overflow-y:scroll;
 }
 
 .image{
@@ -33,13 +36,13 @@ body{
     padding: 0 1.2rem ;
 }
 .img1{
-    width: 42%;
+    width: 34%;
     height: 100%;
     
 }
 .img2{
     height:100%;
-    width:22%;
+    width:15%;
 }
 .main{
     margin-top: 75px;
@@ -57,18 +60,82 @@ form{
     gap:40px;
 }
 .details{
-    background-color:rgba(195,202,216,.6);
+    background-color:#c3cad843;
     border-radius: 20px;
 }
 
 
 
 .collp1{
-    
+    display: flex;
+    justify-content: space-between;
     font-weight: 900;
     color: black;
     min-height: 60px;
     width: 100%;
     padding: 20px;
 
+}
+.icon{
+    font-size:20px;
+}
+.box_x{
+    padding: 50px;
+}
+.box{
+    height:20px;
+    width:90%;
+    border-radius: 4px;
+}
+.small{
+    font-size:small;
+}
+.line{
+    margin-bottom: 30px;
+}
+.sup{
+    margin-top: 15px;
+    display:flex;
+    flex-direction:row;
+    gap:40px;
+}
+.sub{
+    display:flex;
+    flex-direction:column;
+    gap:5px;
+    width:100%;
+}
+.sub label{
+    font-size:small;
+    opacity: 0.6;
+}
+.check label{
+    font-size:medium;
+    opacity:1;
+}
+
+.full_name{
+    margin-top: 20px;
+    display:flex;
+    flex-direction:row;
+    gap:15px;
+}
+.full_name input{
+    border-radius:4px;
+    width:90%;
+}
+.button button{
+    padding:11px;
+    width:150px;
+    border:none;
+    border-radius:4px;
+    background:#0ba6ff;
+    font-size: 14px;
+    color:white;
+}
+ .button :hover{
+    background-color:#1183ca;
+} 
+.button button a{
+    text-decoration:none;
 }
